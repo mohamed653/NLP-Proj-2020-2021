@@ -1,6 +1,16 @@
+import string
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
 
-text = open('input_text.txt').read()
+# NORMLIZATION
+
+# 1- read the text file and encode it
+text = open("read.txt", encoding="utf-8").read()
+
+# 2- text to lowercase
+lower_case = text.lower()
+
+# 3- remove punctuation
+cleaned_text = lower_case.translate(str.maketrans('','',string.punctuation))
 
 
 # ALGORITHM
@@ -15,4 +25,4 @@ def sentiment_analyze(sentiment_text):
     else:
         print("Neutral Sentiment")
 
-sentiment_analyze(text)
+sentiment_analyze(cleaned_text)
