@@ -1,3 +1,3 @@
 # NLP-Proj-2020-2021
 ## Sentiment Analysis 
-### Team : Moahmed Hamed, Mohamed Reda, Omar Elsaid, Mohamed Mohamed Ebrahem, Mohamed Ali
+### Team : Mohamed Hamed, Mohamed Reda, Omar Elsaid, Mohamed Mohamed Ebrahem, Mohamed Ali
