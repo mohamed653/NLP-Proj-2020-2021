@@ -5,11 +5,10 @@ from nltk.corpus import stopwords
 from collections import Counter
 import matplotlib.pyplot as plt
 
-
 # NORMLIZATION
 
 # 1- read the text file and encode it
-text = open("read.txt", encoding="utf-8").read()
+text = open("input_text.txt", encoding="utf-8").read()
 
 # 2- text to lowercase
 lower_case = text.lower()
@@ -52,7 +51,7 @@ with open('emotion.txt','r') as file:
         if word in final_words:
             emotion_list.append(emotion)
 counted_emotions = Counter(emotion_list)
-print(counted_emotions)
+
 
 # using matplotlib library to show the graph of the detailed sentiment analysis
 fig, ax1 = plt.subplots()
